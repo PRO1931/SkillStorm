@@ -1,0 +1,15 @@
+/*
+    Box-Model
+    The way we arrange the spacing for our HTML block elements
+    Box-Model is comprised of 4 distinct pieces:
+    1. Margin - The spacing around the border (HTML element)
+    2. Border - The border surrounding our HTML element
+    3. Padding - The spacing between the border and the actual content
+    4. Content - The actual content of the HTML element
+*/
+
+
+.big-border {
+    /* Each div will have a 1px, black border */
+    border: 10px solid black;
+}
