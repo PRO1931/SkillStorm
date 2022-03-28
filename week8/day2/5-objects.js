@@ -43,7 +43,7 @@ console.log('Person\'s new sister:', person.sister);
 
 const student = {
     name: {
-        first: 'john',
+        first: 'John',
         last:'Doe'
     }
     age: 21,
