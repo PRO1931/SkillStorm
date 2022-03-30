@@ -5,7 +5,7 @@
  * 
  * Think of these as a HashMap of sorts
  * 
- * We addakey and a value for that key
+ * We add a key and a value for that key
  */
 /**
  * Syntax:
@@ -27,7 +27,7 @@ console.log(person.age);
 //What if I print a property that isn't on the person?
 console.log(person.sister);  // undefined since the person objectdoes not have a property of 'sister'
 
-//const DOES prevent me from doin something like this 
+//const DOES prevent me from doing something like this 
 //const = {};
 
 //const does NOT prevent me from changing properties of an object
@@ -35,7 +35,7 @@ person.age = 33;
 
 console.log('Person\'s age after changing:', person.age);
 
-//Adda peroperty to person object of 'sister'
+//Add a property to person object of 'sister'
 person.sister = 'Mary';
 console.log('Person\'s new sister:', person.sister);
 
@@ -45,9 +45,30 @@ const student = {
     name: {
         first: 'John',
         last:'Doe'
-    }
+    },
     age: 21,
     classes: ['Calculus', 'Computer Sciene', 'History', 'Geography']
 }
 
 console.log(student.name.first);
+
+const armedForce = {
+    name: 'Army',
+    milLeader: 'Chief of Staff of the Army',
+    areaOperations: 'Land',
+    established: 17750614,
+    displayInfo: function(){
+        console.log(`The United States ${this.name} is led by 
+            the ${this.milLeader} and was established on the 
+            date time group ${this.established}`);
+    }
+}
+
+armedForce.displayInfo();
+armedForce.name = 'Navy';
+armedForce.milLeader = 'Chief of Naval Operations';
+armedForce.established = 17751013;
+
+console.log(armedForce);
+armedForce.displayInfo();
+
