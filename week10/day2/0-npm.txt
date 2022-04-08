@@ -1,0 +1,60 @@
+What is NPM?
+
+Node Project Manager
+- Allows to us to share, use, and reuse code from and with other developers
+- Package manager means that we maintain the versioning of our dependency Package
+
+JSON
+- Stands for "JavaScript Object Notation"
+- It has over the course of the past decade, become the de facto way of transfering data
+- It took over its predecessor XML
+- It utilizes JS object syntax for housing and storing data
+- The catch is that everything MUST be stored as a string and contained within double quotes ""
+
+NPM Commands:
+
+npm -v
+- Prints the current version of npm
+
+npm init
+- Create a file known as a package.json in the current directory
+- It allows us to vreate a "node project" with its own dependencies
+
+npm init -y
+- Creates a default package.json
+- the same as typing npm init and them hitting enter without typing for every answer
+
+npm install <package-name>
+- Installs as a dependency the package you wish to install
+
+npm install
+- Since we don't push node_modules to Github, when someone clones my repository,
+    how do they get the source code from the packages?
+- Installs all of the dependencies in the package-lock.json
+- If there's no package-lock.json, it'll use package.json and figure it out from there
+
+npm uninstall
+- Uninstalls a dependency from a project
+- Removes it and all of its dependencies from node_modules, package.json, and package-lock.json
+
+npm update <package-name>
+- updates the specified package to the highest version allowed
+- ^ - updates minor fixes (0.x.x)
+- ~ - updates patch fixes (0.0.x)
+- No symbol updates to the highest version on NPM
+
+npx <package-name>
+- One time use, it doesn't install the package, it just executes it
+
+NPM flags:
+
+-g : Installs the package globally
+    - Stored in a singular place on your computer, but it's the same version across projects
+
+-D | --save-dev : Installs the package as a devDependency
+    - These are packages that will not be shipped to the production version of the app
+    - ex (Linters, TypeScript types, testing libraries)
+
+--production
+    - Runs the application entry pooint (index.js) without using the devDependency
+    - Runs the application in "production" mode

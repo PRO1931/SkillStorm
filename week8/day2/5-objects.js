@@ -54,7 +54,7 @@ console.log(student.name.first);
 
 const armedForce = {
     name: 'Army',
-    milLeader: 'Chief of Staff of the Army',
+    militaryLeader: 'Chief of Staff of the Army',
     areaOperations: 'Land',
     established: 17750614,
     displayInfo: function(){
@@ -66,9 +66,10 @@ const armedForce = {
 
 armedForce.displayInfo();
 armedForce.name = 'Navy';
-armedForce.milLeader = 'Chief of Naval Operations';
+armedForce.militaryLeader = 'Chief of Naval Operations';
 armedForce.established = 17751013;
 
 console.log(armedForce);
+console.log(armedForce["militaryLeader"])
 armedForce.displayInfo();
 
