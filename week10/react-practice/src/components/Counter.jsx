@@ -17,6 +17,7 @@ export const Counter = () => {
     // The first element is the state variable. This variable is immutable
     // To change it, we use the function in the second spot in the array
     let [count, setCount] = useState(0);
+    
 
     // I can have another useEffect
     useEffect(() => {
