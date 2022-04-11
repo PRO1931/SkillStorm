@@ -4,6 +4,10 @@ import { Counter } from "./components/Counter.jsx";
 import { ClassCounter } from "./components/ClassCounter.jsx";
 import { Article } from "./components/Article.jsx";
 import { Footer } from "./components/Footer.jsx";
+import { InlineStyling } from './components/InlineStyling.jsx';
+import { MyButton } from './components/MyButton.jsx';
+import { NavBar } from './components/NavBar/NavBar.jsx';
+// import './Apps.css'; // This overrides the previous styles, because I defined it lower in the tree
 
 // This works the same
 // function App()
@@ -22,7 +26,22 @@ const App = () => {
         // This is a fragment and it does not render to the page
         // It's useful for returning 2+ JSX elements at once
         <>
-            <button onClick={() => toggleShouldRender(!shouldRender)}>Render Class Component</button>
+
+
+        <NavBar />
+
+
+
+
+
+
+
+
+
+        <br /><br /><br /><br /><br />
+
+
+        <button onClick={() => toggleShouldRender(!shouldRender)}>Render Class Component</button>
             <Header />
             <Counter />
             {/* null does not render to the page.
@@ -34,7 +53,13 @@ const App = () => {
             the creation of future articles much easier. I just need to follow this template
             */}
             {/* I can utilize props to make my article more specific */}
-            <Article title="React is Awesome!" author="Sean Carter" datePublished="04/07/2022">
+            <MyButton>Submit</MyButton>
+            <InlineStyling />
+           <Article 
+                title="React is Awesome!" 
+                author="Sean Carter" 
+                datePublished="04/07/2022"
+            >
                 React is so cool!
                 <div>Hey!</div>
             </Article>
