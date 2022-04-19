@@ -32,7 +32,7 @@ Merge Conflicts
 
 - Sometimes when merging code from one branch to another, there will be two different versions
     of the same code
-- to solve this, merge conflicts allow someine (usually a manager/senior developer) to pick and choose
+- to solve this, merge conflicts allow someone (usually a manager/senior developer) to pick and choose
 which version of the code should be used on the branch
 - Merge conflicts MUST be resolved in order for a successful merge to occur
 
@@ -70,3 +70,6 @@ General Step By Step For Creating Branches:
 7. `git commit -m "msg"`
 8. `git push`
 9. Go to website and one pull request for merge
+
+Getting Started on Project:
+1. Have 1 partner create the GitHub repository 

@@ -1,5 +1,5 @@
 // State=0 is important because without it state would be undefined by default
-//Doing things this way sets state to be 0 on the first go around
+// Doing things this way sets state to be 0 on the first go around
 export const counterReducer = (state=0, action) => {
     switch(action.type) {
         case 'INCREMENT':
