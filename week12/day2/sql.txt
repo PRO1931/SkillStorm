@@ -112,7 +112,7 @@ Data Normalization: 3 types:
 
 - 3NF:
     - Must be in 2NF first to convert to 3NF
-    - No transitive dependencies (a column determined by another)
+    - No "transitive dependencies" (a column determined by another)
         - Ex: Birthday -> Age
         - I could just manually calculate instead of wasting storage 
 
