@@ -17,10 +17,6 @@ export const Counter = () => {
     const [count, setCount] = useState(0);
     const numberRef = useRef();
 
-    // useReducer
-    /**
-     * useReducer is similar to useState, but gives 
-     */
 
     // useReducer
     /**
